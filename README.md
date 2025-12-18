@@ -1,7 +1,7 @@
 ## Prueba de desempeño – Módulo 2 HTML y CSS
 # Landing page Clipboard
 
-![Design preview for the Blogr landing page coding challenge](assets/design/Landing%20Page.pngassets/imagenes/)
+![Design preview for the Blogr landing page coding challenge](/assets/design/Landing%20Page.png)
 
 ### Caso de uso:
 
