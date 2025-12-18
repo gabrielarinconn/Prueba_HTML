@@ -2,126 +2,264 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Examen Riwi Html y css By Gabriela Rincon</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Examen Nexcent - Gabriela Rincon</title>
   <link rel="stylesheet" href="/css/style.css">
+  
 </head>
-
 <body>
 
-  <!-- HEADER -->
   <header class="header">
-    <img class="logo" src="/assets/imagenes/Logo.png" alt="Logo bussines">
+    <img class="logo" src="/assets/imagenes/Logo.png" alt="Nexcent Logo">
 
-    <nav class="nav">
+    <div class= "menu-hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <!-- MENU -->
+    <ul class="nav" id="nav-menu">
       <a href="#">Home</a>
       <a href="#">Service</a>
       <a href="#">Feature</a>
       <a href="#">Product</a>
       <a href="#">Testimonial</a>
       <a href="#">FAQ</a>
-    </nav>
-    <div>
-    <button class="btn_white">Login</button >
-    <button class="btn">Register</button >
+      <div class="mobile-only-btns">
+        <button class="btn_white">Login</button>
+        <button class="btn">Register</button>
+      </div>
+    </header>ul>
+
+    <div class="header-actions">
+      <button class="btn_white">Login</button>
+      <button class="btn">Register</button>
     </div>
   </header>
 
-  <!-- HERO como se hace para que sea un carrusel-->
-  <section class="hero">
-    <div class="hero-text">
-      <h1>Lessons and insights</h1>
-      <h1 class="hero_text_green">from 8 years</h1>
-      <p>Where to grow your business as a photographer.</p>
-      <button class="btn">Register</button>
-    </div>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Lessons and insights <br><span class="hero_text_green">from 8 years</span></h1>
+        <p>Where to grow your business as a photographer: site or social media?</p>
+        <button class="btn">Register</button>
+      </div>
+      <div class="hero-img">
+        <img src="/assets/imagenes/Illustration.png" alt="Illustration">
+      </div>
+    </section>
 
-    <div class="hero-img">
 
-      <img class="img-box" src="/assets/imagenes/Illustration.png" alt="Man in front computer. do code">
-      
-    </div>
-  </section>
+    <!-- CLIENTS -->
+    <section class="clients">
+      <h2>Our Clients</h2>
+      <p>We have been working with some Fortune 500+ clients</p>
+      <div class="client-logos">
+        <img src="/assets/imagenes/clients_logos/Logo.svg" alt="logo">
+        <img src="/assets/imagenes/clients_logos/Logo(1).svg" alt="logo">
+        <img src="/assets/imagenes/clients_logos/Logo(2).svg" alt="logo">
+        <img src="/assets/imagenes/clients_logos/Logo(3).svg" alt="logo">
+        <img src="/assets/imagenes/clients_logos/Logo(4).svg" alt="logo">
+        <img src="/assets/imagenes/clients_logos/Logo(5).svg" alt="logo">
+      </div>
+    </section>
 
-  <!-- CLIENTES -->
-  <section class="clients">
-    <h2>Our Clients</h2>
-    <p>We have been working with some Fortune 500+ clients</p>
-
-     <div class="client-logos">
-      <img class="logo-box" src="/assets/imagenes/clients_logos/Logo.svg" alt="logo client 1">
-      <img class="logo-box" src="/assets/imagenes/clients_logos/Logo(1).svg" alt="logo client 2">
-      <img class="logo-box" src="/assets/imagenes/clients_logos/Logo(2).svg" alt="logo client 3">
-      <img class="logo-box" src="/assets/imagenes/clients_logos/Logo(3).svg" alt="logo client 4">
-      <img class="logo-box" src="/assets/imagenes/clients_logos/Logo(4).svg" alt="logo client 5">
-      <img class="logo-box" src="/assets/imagenes/clients_logos/Logo(5).svg" alt="logo client 6">
-      <img class="logo-box" src="/assets/imagenes/clients_logos/Logo(6).svg" alt="logo client 7">
-    </div>
-  </section>
 
      <!-- MANAGE -->
-  <section class="manage">
-    
-    <h2>Manage your entire community in a single system</h2>
-    <p>Who is Nextcent suitable for?</p>
-    <div class="manage_content_card">
-      <div class="card">
-        <img class="logo-box" src="/assets/imagenes/Icon.png" alt="icon people">
+    <section class="manage">
+
+      <h2>Manage your entire community in a single system</h2>
+      <p>Who is Nextcent suitable for?</p>
+
+      <div class="manage_content_card">
+        <div class="card">
+          <img src="/assets/imagenes/Icon.png" alt="icon">
+          <h3>Membership Organisations</h3>
+          <p>Our membership management software provides full automation of renewals and payments.</p>
+        </div>
+        <div class="card">
+          <img src="/assets/imagenes/Icon(2).png" alt="icon">
+          <h3>National Associations</h3>
+          <p>Full automation of membership renewals and payments.</p>
+        </div>
+        <div class="card">
+          <img src="/assets/imagenes/Icon(3).png" alt="icon">
+          <h3>Clubs And Groups</h3>
+          <p>Full automation of membership renewals and payments.</p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- UNSEEN -->
+    <section class="info">
+      
+      <img class="img-box" src="/assets/imagenes/Frame 35.png" alt="a man showes a woman a windows for login">
+
+      <div class="info-text">
+        <h2>The unseen of spending three years at Pixelgrade</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo ipsum. Sed accumsan quam vitae est varius fringilla. Pellentesque placerat vestibulum lorem sed porta. Nullam mattis tristique iaculis. Nullam pulvinar sit amet risus pretium auctor. Etiam quis massa pulvinar, aliquam quam vitae, tempus sem. Donec elementum pulvinar odio.</p>
+        <button class="btn">Learn More</button>
+      </div>
+    </section>
+
+     <!-- HELPING -->
+    <section class="stats">
+      <div class="stats-text">
+        <h2>Helping a local <br><span class="hero_text_green">business reinvent itself</span></h2>
+        <p>We reached here with our hard work and dedication</p>
+      </div>
+      <div class="stats-grid">
+        <div class="stat-item">
+            <div>
+              <img src="/assets/imagenes/Icon(4).png" alt="icon">
+            </div>
+            <div> 
+              <h3>2,245,341</h3>
+              <p>Members</p>
+            </div>  
+        </div>
+
+        <div class="stat-item">
+            <div>
+              <img src="/assets/imagenes/Icon(5).png" alt="icon">
+            </div>
+            <div>
+              <h3>46,328</h3>
+              <p>Clubs</p></div>
+            </div>  
+        <div class="stat-item">
+            <div>
+              <img src="/assets/imagenes/Icon(6).png" alt="icon">
+            </div>
+            <div>
+              <h3>828,867</h3>
+              <p>Event Bookings</p>
+            </div>
+            
+        </div>
+        <div class="stat-item">
+            <div>
+              <img src="/assets/imagenes/Icon(7).png" alt="icon">
+            </div>
+            <div>  
+              <h3>1,926,436</h3>
+              <p>Payments</p>
+            </div>
+        </div>
+      </div>
+    </section>
+
+     <!-- HOW DESIGN -->
+    <section class="info">
+      
+      <img class="img-box" src="/assets/imagenes/pana.png" alt="a man showes a woman a windows for login">
+
+      <div class="info-text">
+        <h2>How to design your site footer like we did</h2>
+        <p>Donec a eros justo. Fusce egestas tristique ultrices. Nam tempor, augue nec tincidunt molestie, massa nunc varius arcu, at scelerisque elit erat a magna. Donec quis erat at libero ultrices mollis. In hac habitasse platea dictumst. Vivamus vehicula leo dui, at porta nisi facilisis finibus. In euismod augue vitae nisi ultricies, non aliquet urna tincidunt. Integer in nisi eget nulla commodo faucibus efficitur quis massa. Praesent felis est, finibus et nisi ac, hendrerit venenatis libero. Donec consectetur faucibus ipsum id gravida.</p>
+        <button class="btn">Learn More</button>
+      </div>
+    </section>
+
+
+     <!-- TIM SMITH -->
+    <section class="info">
+      
+      <img class="img-box" src="/assets/imagenes/image 9.png" alt="a man showes a woman a windows for login">
+
+      <div class="info-text">
+        <p>Maecenas dignissim justo eget nulla rutrum molestie. Maecenas lobortis sem dui, vel rutrum risus tincidunt ullamcorper. Proin eu enim metus. Vivamus sed libero ornare, tristique quam in, gravida enim. Nullam ut molestie arcu, at hendrerit elit. Morbi laoreet elit at ligula molestie, nec molestie mi blandit. Suspendisse cursus tellus sed augue ultrices, quis tristique nulla sodales. Suspendisse eget lorem eu turpis vestibulum pretium. Suspendisse potenti. Quisque malesuada enim sapien, vitae placerat ante feugiat eget. Quisque vulputate odio neque, eget efficitur libero condimentum id. Curabitur id nibh id sem dignissim finibus ac sit amet magna.</p>
+        <h3 class="hero_text_green">Tim Smith</h3>
+        <p>British Dragon Boat Racing Association</p>
+        <div class="client-logos">
+        <img src="/assets/imagenes/clients_logos/Logo.svg" alt="logo">
+        <img src="/assets/imagenes/clients_logos/Logo(1).svg" alt="logo">
+        <img src="/assets/imagenes/clients_logos/Logo(2).svg" alt="logo">
+        <img src="/assets/imagenes/clients_logos/Logo(3).svg" alt="logo">
+        <img src="/assets/imagenes/clients_logos/Logo(4).svg" alt="logo">
+        <img src="/assets/imagenes/clients_logos/Logo(5).svg" alt="logo">
+        <button class="btn_white">Meet all customers
+          <img src="/assets/imagenes/Right.svg" alt="icon">
+        </button>
+      </div>
+      </div>
+      
+    </section>
+
+
+     <!-- SERVICIOS -->
+    <section class="services">
+      <div class="grey_card">
         <h3>Membership Organisations</h3>
-        <p>Our membership management software provides full automation of membership renewals and payments</p>
+        <p>Our membership management software.</p>
       </div>
 
-        <div class="card">
-        <img class="logo-box" src="/assets/imagenes/Icon(2).png" alt="icon towers">
+      <div class="grey_card"">
         <h3>National Associations</h3>
-        <p>Our membership management software provides full automation of membership renewals and payments</p>
+        <p>Manage your members efficiently.</p>
       </div>
 
-        <div class="card">
-        <img class="logo-box" src="/assets/imagenes/Icon(3).png" alt="icon hands">
+      <div class="grey_card"">
         <h3>Clubs And Groups</h3>
-        <p>Our membership management software provides full automation of membership renewals and payments</p>
+        <p>Organize your community easily.</p>
+
       </div>
-    </div>
+    </section>
 
 
+    <!-- PELLEMTESQUE -->
+     <section class="pellem" >
+        <h2>Pellentesque suscipit <br>fringilla libero eu</h2>
+        <button class="btn">Get a Demo</button>
+     </section>
 
-  </section>
+  
 
-  <!-- SERVICIOS -->
-  <section class="services">
-    <div class="card">
-      <h3>Membership Organisations</h3>
-      <p>Our membership management software.</p>
-    </div>
-
-    <div class="card">
-      <h3>National Associations</h3>
-      <p>Manage your members efficiently.</p>
-    </div>
-
-    <div class="card">
-      <h3>Clubs And Groups</h3>
-      <p>Organize your community easily.</p>
-    </div>
-  </section>
-
-
-
-  <!-- INFO -->
-  <section class="info">
-    <div class="img-box">Imagen</div>
-
-    <div class="info-text">
-      <h2>The unseen of spending three years</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      <button class="btn">Learn More</button>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
+    
+    <!-- FOOTER -->
   <footer class="footer">
-    <p>© 2025</p>
+  
+      <div>
+        <img class="logo" src="/assets/imagenes/Logo_white.svg" alt="Nexcent Logo">
+        <p>Copyright © 2020 Nexcent ltd.</p>
+        <p>All rights reserved</p>
+        <div class="client-logos">
+          <img src="/assets/imagenes/social_media/dribbe Social Icons.png" alt="logo">
+          <img src="/assets/imagenes/social_media/instagram Social Icons.png" alt="logo">
+          <img src="/assets/imagenes/social_media/tiwter Social Icons.png" alt="logo">
+          <img src="/assets/imagenes/social_media/youtube Social Icons.png" alt="logo">
+        </div>
+      </div>
+      </div>
+
+      <div>
+        <ul>
+          <li>Esto</li>
+          <li>Lo otro</li>
+          <li>Lo de más allá</li>
+        </ul>
+      </div>
+
+      <div >
+        <ul>
+          <li>Esto</li>
+          <li>Lo otro</li>
+          <li>Lo de más allá</li>
+        </ul>
+
+      </div>
+
+      <div>
+        
+        <h3 class="hero_text_green">Tim Smith</h3>
+        <button class="btn">Register</button>
+
+      </div>
   </footer>
 
+  <script src="main.js"></script>
+  <script src="/js/script.js"></script>
 </body>
 </html>

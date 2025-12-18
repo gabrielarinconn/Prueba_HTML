@@ -1,83 +1,141 @@
-/* RESET */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* --- RESET & VARIABLES --- */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body { 
+    font-family: 'Segoe UI', Arial, sans-serif; 
+    color: #4D4D4D; 
 }
 
-body {
-  font-family: Arial, sans-serif;
+/* --- GLOBALES --- */
+section { padding: 40px 10%; }
+
+.hero_text_green { color: #4CAF4F; }
+
+.btn { 
+    background: #4CAF4F; 
+    color: white; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    transition: 0.3s; }
+
+
+.btn:hover {
+ background-color: #2E7D31;;
 }
 
-section{
-  margin: 1% 10% 1%;
+.btn_white { 
+    background: transparent; 
+    color: #4CAF4F; border: none; 
+    cursor: pointer; 
+    padding: 10px 20px; }
+
+.btn_white:hover {
+ color: #2E7D31;;
 }
 
-/* HEADER → FLEX */
+.nav a:hover {
+ color: #2E7D31;;
+}
+
+/* --- HEADER --- */
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 40px;
-}
-
-.nav {
-  display: flex;
-  gap: 20px;
-}
-
-.nav a {
-  text-decoration: none;
-  color: black;
-}
-
-.btn {
-  padding: 8px 16px;
-  background:#4CAF4F;
-  color: white;
-  border-radius: 3px;
-  border: none;
-}
-
-.btn_white{
-  padding: 8px 16px;
+  padding: 20px 10%;
   background: white;
-  color: #4CAF4F;
-  border-radius: 3px;
-  border: none;
+  position: sticky;
+  top: 0; z-index: 1000;
+}
+.nav { 
+  display: flex; 
+  gap: 20px; 
 }
 
-.btn_white , a:hover {
- color: #2E7D31;;
+.nav-foot { 
+  display: flex; 
+  gap: 20px; 
+}
+.nav a { 
+  text-decoration: none; 
+  color: #4D4D4D; 
+  font-weight: 500; 
+}
+.mobile-only-btns { 
+  display: none; 
 }
 
-
-
-.btn:hover {
-  background-color: #2E7D31;
+/* --- HAMBURGER ICON --- */
+.menu-hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+.menu-hamburger span {
+  width: 30px; height: 3px; background: #4CAF4F; border-radius: 5px;
 }
 
-h3, h2, p{
-  color: #4D4D4D;
+/* --- SECTIONS --- */
+.hero { 
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  align-items: center; 
+  background: #F5F7FA; 
 }
 
-/* HERO → GRID */
-.hero {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 60px 40px;
-  gap: 40px;
-  align-items: center;
+.hero h1 { 
+  font-size: 48px; 
 }
 
-.hero-text h1 {
-  margin-bottom: 20px;
-   font-size: 64px;
+.client-logos { 
+  display: flex; 
+  justify-content: space-between; 
+  margin-top: 30px; 
+  flex-wrap: wrap; 
 }
 
-.hero-text p {
-  margin-bottom: 20px;
+.manage_content_card { 
+  display: grid; 
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px; 
+  text-align: center; 
+}
 
+.card { 
+  padding: 20px; 
+  background: white; 
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05); 
+  border-radius: 8px; 
+}
+
+.stats { 
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    background: #F5F7FA; 
+    align-items: center; 
+}
+
+.stat-item{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+}
+
+.stat-item img{
+   width: ;
+}
+
+.manage {
+  text-align: center;
+  padding: 40px;
+}
+
+.stats-grid { 
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px; 
 }
 
 .img-box {
@@ -87,57 +145,7 @@ h3, h2, p{
   align-items: center;
 }
 
-.hero_text_green {
-  color: #4CAF4F;
-}
 
-/* CLIENTES → FLEX */
-.clients {
-  text-align: center;
-  padding: 40px;
-}
-
-.client-logos {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  margin-top: 20px;
-}
-
-.logo-box {
-  width: 60px;
-  height: 40px;
-}
-
-/* MANAGE → GRID */
-
-.manage {
-  text-align: center;
-  padding: 40px;
-}
-
-.manage_content_card {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  padding: 40px;
-}
-
-/* SERVICIOS → GRID */
-.services {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  padding: 40px;
-}
-
-.card {
-  background: #eee;
-  padding: 20px;
-  text-align: center;
-}
-
-/* INFO → GRID */
 .info {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -146,62 +154,70 @@ h3, h2, p{
   align-items: center;
 }
 
-/* FOOTER */
-.footer {
-  text-align: center;
-  padding: 20px;
-  background: #333;
-  color: white;
+
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 40px;
 }
 
-/* RESPONSIVE */
-/* En pantallas de 480px y 768px se transform al menu hamburguesa */
-@media (max-width: 480px) {
-  .hero,
-  .info {
-    grid-template-columns: 1fr;
-  }
+.grey_card{
+  background: #eee;
+  padding: 20px;
+  text-align: center;
+}
 
-  .services {
-    grid-template-columns: 1fr;
-  }
+.pellem{
+  text-align: center;
+  padding: 40px;
+}
 
-  .header {
+.pellem h2{
+  font-size: 50px;
+  color: #263238;
+}
+
+.footer { 
+  display: flex; 
+  justify-content: space-between; 
+  flex-wrap: wrap; 
+}
+
+/* --- RESPONSIVE --- */
+
+@media (max-width: 1024px) {
+  .hero, .manage_content_card, .stats { grid-template-columns: 1fr; text-align: center; }
+  
+  .header-actions { display: none; }
+  .menu-hamburger { display: flex; }
+
+  /* El menú se vuelve lateral/desplegable */
+  .nav {
+    position: fixed;
+    top: 70px;
+    right: -100%; /* Escondido */
+    background: white;
+    width: 70%;
+    height: 100vh;
     flex-direction: column;
-    gap: 15px;
+    padding: 40px;
+    transition: 0.5s;
+    box-shadow: -5px 0 15px rgba(0,0,0,0.1);
   }
+  .nav.active { right: 0; } /* Se muestra al activar */
+  .mobile-only-btns { display: flex; flex-direction: column; gap: 10px; margin-top: 20px; }
 }
 
 @media (max-width: 768px) {
-  .hero,
-  .info {
-    grid-template-columns: 1fr;
-  }
-
-  .services {
-    grid-template-columns: 1fr;
-  }
-
-  .header {
-    flex-direction: column;
-    gap: 15px;
-  }
+  .hero h1 { font-size: 36px; }
 }
 
-
-
-@media (max-width: 1024px) {
-  .hero,
-  .info {
-    grid-template-columns: 1fr;
-  }
-
-  .services {
-    grid-template-columns: 1fr;
-  }
-
-  .header {
-    flex-direction: column;
-    gap: 15px;
-  }
+@media (max-width: 480px) {
+  section { padding: 20px 5%; }
+  .hero h1 { font-size: 28px; }
 }
+
+/* FOOTER */
+.footer { background: #263238; color: white; text-align: center; padding: 40px; }
