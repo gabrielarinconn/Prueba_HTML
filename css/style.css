@@ -9,6 +9,10 @@ body {
   font-family: Arial, sans-serif;
 }
 
+section{
+  margin: 1% 10% 1%;
+}
+
 /* HEADER → FLEX */
 .header {
   display: flex;
@@ -29,9 +33,32 @@ body {
 
 .btn {
   padding: 8px 16px;
-  background: green;
+  background:#4CAF4F;
   color: white;
+  border-radius: 3px;
   border: none;
+}
+
+.btn_white{
+  padding: 8px 16px;
+  background: white;
+  color: #4CAF4F;
+  border-radius: 3px;
+  border: none;
+}
+
+.btn_white , a:hover {
+ color: #2E7D31;;
+}
+
+
+
+.btn:hover {
+  background-color: #2E7D31;
+}
+
+h3, h2, p{
+  color: #4D4D4D;
 }
 
 /* HERO → GRID */
@@ -45,18 +72,23 @@ body {
 
 .hero-text h1 {
   margin-bottom: 20px;
+   font-size: 64px;
 }
 
 .hero-text p {
   margin-bottom: 20px;
+
 }
 
 .img-box {
-  background: #ddd;
-  height: 200px;
+  height: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.hero_text_green {
+  color: #4CAF4F;
 }
 
 /* CLIENTES → FLEX */
@@ -75,7 +107,20 @@ body {
 .logo-box {
   width: 60px;
   height: 40px;
-  background: #ccc;
+}
+
+/* MANAGE → GRID */
+
+.manage {
+  text-align: center;
+  padding: 40px;
+}
+
+.manage_content_card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 40px;
 }
 
 /* SERVICIOS → GRID */
@@ -110,7 +155,42 @@ body {
 }
 
 /* RESPONSIVE */
+/* En pantallas de 480px y 768px se transform al menu hamburguesa */
+@media (max-width: 480px) {
+  .hero,
+  .info {
+    grid-template-columns: 1fr;
+  }
+
+  .services {
+    grid-template-columns: 1fr;
+  }
+
+  .header {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
 @media (max-width: 768px) {
+  .hero,
+  .info {
+    grid-template-columns: 1fr;
+  }
+
+  .services {
+    grid-template-columns: 1fr;
+  }
+
+  .header {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+
+
+@media (max-width: 1024px) {
   .hero,
   .info {
     grid-template-columns: 1fr;

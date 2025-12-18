@@ -1,5 +1,7 @@
+## !Bienvenido TL Sebastian! 👋
+
 ## Prueba de desempeño – Módulo 2 HTML y CSS
-# Landing page Clipboard
+# Landing page Clipboard by Gabriela Rincón 👩‍🦱
 
 ![Design preview for the Blogr landing page coding challenge](/assets/design/Mockup_Landing.png)
 
@@ -11,12 +13,6 @@ características del producto, además de adaptarse a diferentes dispositivos. T
 referencia el siguiente reto de Frontend Mentor:
 Clipboard landing page – Frontend Mentor
 Los recursos como assets los puedes descargar directamente de del Figma.
-
-### Autores ✒️
-
-
-* **Gabriela Rincón** - *Desarrollo* y *Documentación* 
-
 
 ### Funcionalidades principales 📖
 
@@ -49,4 +45,10 @@ independiente para los features o el service.
 - [x] Agregar transiciones suaves (transition) en elementos interactivos como botones y
 enlaces.
  Incluir una animación o microinteracción opcional en la *navegación o botones.
-- [x] Desplegar en una URL publica de productio n
+- [x] Desplegar en una URL publica de production
+
+
+### Autora ✒️
+
+
+* **Gabriela Rincón** - 👩‍🦱 *Desarrollo* y *Documentación* 
