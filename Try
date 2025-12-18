@@ -1,0 +1,223 @@
+
+csss--
+
+/* --- RESET & VARIABLES --- */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', Arial, sans-serif; color: #4D4D4D; }
+
+/* --- GLOBALES --- */
+section { padding: 40px 10%; }
+.hero_text_green { color: #4CAF4F; }
+.btn { background: #4CAF4F; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; transition: 0.3s; }
+.btn:hover { background: #2E7D31; }
+.btn_white { background: transparent; color: #4CAF4F; border: none; cursor: pointer; padding: 10px 20px; }
+
+/* --- HEADER --- */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+  background: white;
+  position: sticky;
+  top: 0; z-index: 1000;
+}
+.nav { display: flex; gap: 20px; }
+.nav a { text-decoration: none; color: #4D4D4D; font-weight: 500; }
+.mobile-only-btns { display: none; }
+
+/* --- HAMBURGER ICON --- */
+.menu-hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+.menu-hamburger span {
+  width: 30px; height: 3px; background: #4CAF4F; border-radius: 5px;
+}
+
+/* --- SECTIONS --- */
+.hero { display: grid; grid-template-columns: 1fr 1fr; align-items: center; background: #F5F7FA; }
+.hero h1 { font-size: 48px; }
+.client-logos { display: flex; justify-content: space-between; margin-top: 30px; flex-wrap: wrap; }
+.manage_content_card { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; text-align: center; }
+.card { padding: 20px; background: white; box-shadow: 0 4px 10px rgba(0,0,0,0.05); border-radius: 8px; }
+.stats { display: grid; grid-template-columns: 1fr 1fr; background: #F5F7FA; align-items: center; }
+.stats-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+
+/* --- RESPONSIVE (Tus criterios) --- */
+
+@media (max-width: 1024px) {
+  .hero, .manage_content_card, .stats { grid-template-columns: 1fr; text-align: center; }
+  
+  .header-actions { display: none; }
+  .menu-hamburger { display: flex; }
+
+  /* El menú se vuelve lateral/desplegable */
+  .nav {
+    position: fixed;
+    top: 70px;
+    right: -100%; /* Escondido */
+    background: white;
+    width: 70%;
+    height: 100vh;
+    flex-direction: column;
+    padding: 40px;
+    transition: 0.5s;
+    box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+  }
+  .nav.active { right: 0; } /* Se muestra al activar */
+  .mobile-only-btns { display: flex; flex-direction: column; gap: 10px; margin-top: 20px; }
+}
+
+@media (max-width: 768px) {
+  .hero h1 { font-size: 36px; }
+}
+
+@media (max-width: 480px) {
+  section { padding: 20px 5%; }
+  .hero h1 { font-size: 28px; }
+}
+
+/* FOOTER */
+.footer { background: #263238; color: white; text-align: center; padding: 40px; }
+
+
+
+
+
+js-----
+
+// Seleccionamos los elementos
+const hamburger = document.getElementById('hamburger');
+const navMenu = document.getElementById('nav-menu');
+
+// Agregamos el evento de clic
+hamburger.addEventListener('click', () => {
+  // La clase 'active' es la que tiene el 'right: 0' en el CSS
+  navMenu.classList.toggle('active');
+  
+  // Opcional: animación simple al botón
+  hamburger.style.opacity = navMenu.classList.contains('active') ? "0.5" : "1";
+});
+
+// Cerramos el menú al hacer clic en cualquier enlace
+document.querySelectorAll('.nav a').forEach(link => {
+  link.addEventListener('click', () => {
+    navMenu.classList.remove('active');
+  });
+});
+
+
+
+
+
+
+html-----
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Examen Nexcent - Gabriela Rincon</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <img class="logo" src="/assets/imagenes/Logo.png" alt="Nexcent Logo">
+
+    <div class="menu-hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <nav class="nav" id="nav-menu">
+      <a href="#">Home</a>
+      <a href="#">Service</a>
+      <a href="#">Feature</a>
+      <a href="#">Product</a>
+      <a href="#">Testimonial</a>
+      <a href="#">FAQ</a>
+      <div class="mobile-only-btns">
+        <button class="btn_white">Login</button>
+        <button class="btn">Register</button>
+      </div>
+    </nav>
+
+    <div class="header-actions">
+      <button class="btn_white">Login</button>
+      <button class="btn">Register</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Lessons and insights <br><span class="hero_text_green">from 8 years</span></h1>
+        <p>Where to grow your business as a photographer: site or social media?</p>
+        <button class="btn">Register</button>
+      </div>
+      <div class="hero-img">
+        <img src="/assets/imagenes/Illustration.png" alt="Illustration">
+      </div>
+    </section>
+
+    <section class="clients">
+      <h2>Our Clients</h2>
+      <p>We have been working with some Fortune 500+ clients</p>
+      <div class="client-logos">
+        <img src="/assets/imagenes/clients_logos/Logo.svg" alt="logo">
+        <img src="/assets/imagenes/clients_logos/Logo(1).svg" alt="logo">
+        <img src="/assets/imagenes/clients_logos/Logo(2).svg" alt="logo">
+        <img src="/assets/imagenes/clients_logos/Logo(3).svg" alt="logo">
+        <img src="/assets/imagenes/clients_logos/Logo(4).svg" alt="logo">
+        <img src="/assets/imagenes/clients_logos/Logo(5).svg" alt="logo">
+      </div>
+    </section>
+
+    <section class="manage">
+      <h2>Manage your entire community in a single system</h2>
+      <p>Who is Nextcent suitable for?</p>
+      <div class="manage_content_card">
+        <div class="card">
+          <img src="/assets/imagenes/Icon.png" alt="icon">
+          <h3>Membership Organisations</h3>
+          <p>Our membership management software provides full automation of renewals and payments.</p>
+        </div>
+        <div class="card">
+          <img src="/assets/imagenes/Icon(2).png" alt="icon">
+          <h3>National Associations</h3>
+          <p>Full automation of membership renewals and payments.</p>
+        </div>
+        <div class="card">
+          <img src="/assets/imagenes/Icon(3).png" alt="icon">
+          <h3>Clubs And Groups</h3>
+          <p>Full automation of membership renewals and payments.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div class="stats-text">
+        <h2>Helping a local <br><span class="hero_text_green">business reinvent itself</span></h2>
+        <p>We reached here with our hard work and dedication</p>
+      </div>
+      <div class="stats-grid">
+        <div class="stat-item"><h3>2,245,341</h3><p>Members</p></div>
+        <div class="stat-item"><h3>46,328</h3><p>Clubs</p></div>
+        <div class="stat-item"><h3>828,867</h3><p>Event Bookings</p></div>
+        <div class="stat-item"><h3>1,926,436</h3><p>Payments</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 Nexcent ltd. All rights reserved</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
