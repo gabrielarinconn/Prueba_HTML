@@ -3,7 +3,7 @@
 
 ![Design preview for the Blogr landing page coding challenge](/assets/design/Mockup_Landing.png)
 
-### Caso de uso:
+### Caso de uso 📋
 
 Eres un desarrollador web encargado de replicar la landing page de un producto llamado
 Clipboard. Esta página debe transmitir de forma clara y visualmente atractiva las
@@ -15,10 +15,10 @@ Los recursos como assets los puedes descargar directamente de del Figma.
 ### Autores ✒️
 
 
-* **Gabriela Rincón** - *Desarrollo* y *Documentación * 
+* **Gabriela Rincón** - *Desarrollo* y *Documentación* 
 
 
-### Funcionalidades principales
+### Funcionalidades principales 📖
 
 ## Requisitos:
 
@@ -42,11 +42,11 @@ original.
 * Tablet (≥ 768px)
 * Móvil (≤ 480px)
 
-## Opcional pero valorado en tu proceso
-* Crear una versión adicional con varias páginas: por ejemplo, una página
+## Opcional pero valorado en tu proceso ✅
+- [x] Crear una versión adicional con varias páginas: por ejemplo, una página
 independiente para los features o el service.
-* Usar variables CSS (:root) para definir colores y fuentes.
-* Agregar transiciones suaves (transition) en elementos interactivos como botones y
+- [x] Usar variables CSS (:root) para definir colores y fuentes.
+- [x] Agregar transiciones suaves (transition) en elementos interactivos como botones y
 enlaces.
  Incluir una animación o microinteracción opcional en la *navegación o botones.
-* Desplegar en una URL publica de productio n
+- [x] Desplegar en una URL publica de productio n
