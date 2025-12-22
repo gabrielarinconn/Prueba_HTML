@@ -19,12 +19,12 @@ This project is a professional landing page built for Nexcent, a community manag
 
 * Modern Layouts: Intensive use of CSS Grid for complex sections and Flexbox for alignment.
 
-*  Semantic Structure: Coded with accessibility and SEO best practices in mind.
+* Semantic Structure: Coded with accessibility and SEO best practices in mind.
 
 * Hover States: Interactive elements like buttons and links feature smooth transitions and visual feedback.
 
 ### 🛠️ Built With
-* HTML5: Semantic markup (<header>, <section>, <footer>, etc.).
+* HTML5: Semantic markup ```(<header>, <section>, <footer>, etc.) ```
 
 * CSS3: Custom properties, Flexbox, and CSS Grid.
 
