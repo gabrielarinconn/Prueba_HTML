@@ -36,16 +36,16 @@ This project is a professional landing page built for Nexcent, a community manag
 * CSS Grid & Flexbox
 I utilized a hybrid approach to layout design:
 
-- CSS Grid: Used for the main structure of the Hero, Manage, and Stats sections. It allowed for easy column management (e.g., grid-template-columns: repeat(3, 1fr)) and precise control over the 2x2 grid in the statistics area.
+    - CSS Grid: Used for the main structure of the Hero, Manage, and Stats sections. It allowed for easy column management (e.g., grid-template-columns: repeat(3, 1fr)) and precise control over the 2x2 grid in the statistics area.
 
 * Flexbox: Employed in the Header and Footer to manage space distribution (using justify-content: space-between) and vertical alignment of icons and text.
 
 * Responsive Strategy
 The project follows a "Desktop-First" approach with comprehensive breakpoints:
 
-- 1024px: Transition from multi-column layouts to single-column stacks for tablets.
+    - 1024px: Transition from multi-column layouts to single-column stacks for tablets.
 
-- 768px/480px: Adjustments to font sizes and padding to ensure readability on small smartphones.
+    - 768px/480px: Adjustments to font sizes and padding to ensure readability on small smartphones.
 
 * JavaScript Logic
 The mobile menu is controlled by a lightweight script that toggles an .active class. This triggers a CSS transition that moves the menu from right: -100% to right: 0, ensuring a smooth user experience without using heavy libraries.
