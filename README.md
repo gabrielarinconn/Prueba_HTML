@@ -53,7 +53,7 @@ The mobile menu is controlled by a lightweight script that toggles an .active cl
 ### 📂 Project Structure
 Plaintext
 
-´´´´´´
+```
 
 
 ├── assets/
@@ -66,7 +66,7 @@ Plaintext
 └── index.html             # Main entry point
 
 
-´´´´´´
+```
 
 ### 📝 Key Learnings
 During this project, I strengthened my understanding of:
