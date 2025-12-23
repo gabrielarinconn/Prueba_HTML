@@ -92,6 +92,16 @@ section { padding: 40px 10%; }
   font-size: 48px; 
 }
 
+.clients h2{
+  display: flex;
+  justify-content: center;
+}
+
+.clients p{
+  display: flex;
+  justify-content: center;
+}
+
 .client-logos { 
   display: flex; 
   justify-content: space-between; 
