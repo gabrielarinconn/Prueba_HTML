@@ -50,8 +50,10 @@ section { padding: 40px 10%; }
   top: 0; z-index: 1000;
 }
 .nav { 
-  display: flex; 
+  display:flex ;
+  justify-content: center; 
   gap: 20px; 
+  list-style: none;
 }
 
 .nav-foot { 
